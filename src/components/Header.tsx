@@ -17,17 +17,17 @@ export const Header = () => {
           <a href="#como-funciona" className="text-muted-foreground hover:text-primary transition-colors">
             Como Funciona
           </a>
-          <a href="#cadastrar" className="text-muted-foreground hover:text-primary transition-colors">
+          <a href="/cadastrar" className="text-muted-foreground hover:text-primary transition-colors">
             Seja um Fornecedor
           </a>
         </nav>
 
         <div className="flex items-center space-x-4">
-          <Button variant="outline" className="hidden md:inline-flex">
-            Login
+          <Button variant="outline" className="hidden md:inline-flex" asChild>
+            <a href="/dashboard">Dashboard</a>
           </Button>
-          <Button className="bg-gradient-primary shadow-button hover:scale-105 transition-transform">
-            Cadastrar Empresa
+          <Button className="bg-gradient-primary shadow-button hover:scale-105 transition-transform" asChild>
+            <a href="/cadastrar">Cadastrar Empresa</a>
           </Button>
           <Button variant="outline" size="icon" className="md:hidden">
             <Menu className="h-5 w-5" />
