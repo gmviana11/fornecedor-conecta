@@ -7,7 +7,7 @@ export const Header = () => {
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <Building2 className="h-8 w-8 text-primary" />
-          <span className="text-2xl font-bold text-foreground">FornecedorHub</span>
+          <span className="text-2xl font-bold text-foreground">MXS Soluções</span>
         </div>
         
         <nav className="hidden md:flex items-center space-x-8">
