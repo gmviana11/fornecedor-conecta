@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00bcd4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0288d1;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Letter I simplified -->
+  <rect x="8" y="45" width="12" height="3" fill="url(#blueGradient)" rx="1.5"/>
+  <rect x="11" y="25" width="6" height="22" fill="url(#blueGradient)" rx="1"/>
+  <rect x="8" y="22" width="12" height="3" fill="url(#blueGradient)" rx="1.5"/>
+  
+  <!-- Letter A with circle on top -->
+  <circle cx="32" cy="12" r="6" fill="none" stroke="url(#blueGradient)" stroke-width="2"/>
+  <circle cx="32" cy="12" r="4" fill="none" stroke="url(#blueGradient)" stroke-width="1.5"/>
+  
+  <!-- A frame -->
+  <path d="M 20 48 L 32 20 L 44 48" fill="none" stroke="url(#blueGradient)" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 26 38 L 38 38" fill="none" stroke="url(#blueGradient)" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="35" cy="38" r="1" fill="url(#blueGradient)"/>
+  
+  <!-- Base lines -->
+  <rect x="8" y="48" width="48" height="2" fill="url(#blueGradient)" rx="1"/>
+  <rect x="8" y="52" width="48" height="1.5" fill="url(#blueGradient)" rx="0.75"/>
+</svg>

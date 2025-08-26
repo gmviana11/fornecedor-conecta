@@ -6,16 +6,13 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { AuthProvider, useAuthContext } from "@/hooks/useAuth";
 import ProtectedRoute from "@/components/ProtectedRoute";
 import Index from "./pages/Index";
-import Dashboard from "./pages/Dashboard";
-import DashboardHome from "./pages/DashboardHome";
-import SuppliersManagement from "./pages/SuppliersManagement";
-import SupplierForm from "./pages/SupplierForm";
-import DashboardSettings from "./pages/DashboardSettings";
+import AdminDashboard from "./pages/AdminDashboard";
 import Login from "./pages/Login";
 import SupplierDashboard from "./pages/SupplierDashboard";
 import UserDashboard from "./pages/UserDashboard";
 import ServiceRequest from "./pages/ServiceRequest";
 import NotFound from "./pages/NotFound";
+import SupplierForm from "./pages/SupplierForm";
 
 const queryClient = new QueryClient();
 
@@ -48,14 +45,12 @@ const AppRoutes = () => {
       {/* Super Admin Dashboard */}
       <Route path="/dashboard" element={
         <ProtectedRoute allowedRoles={['super_admin']}>
-          <Dashboard />
+          <AdminDashboard />
         </ProtectedRoute>
-      }>
-        <Route index element={<DashboardHome />} />
-        <Route path="suppliers" element={<SuppliersManagement />} />
-        <Route path="suppliers/new" element={<SupplierForm />} />
-        <Route path="settings" element={<DashboardSettings />} />
-      </Route>
+      } />
+      
+      {/* Cadastro de Fornecedor */}
+      <Route path="/cadastrar" element={<SupplierForm />} />
       
       {/* Supplier Dashboard */}
       <Route path="/supplier-dashboard" element={
