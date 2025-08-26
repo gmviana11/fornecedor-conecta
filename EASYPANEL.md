@@ -18,7 +18,7 @@ npm start
 3. **SPA:** Configurado para Single Page Application (React Router)
 
 ### Environment Variables
-- PORT=3000 (padrão, será substituído pelo Easy Panel automaticamente)
+- PORT=3001 (padrão, será substituído pelo Easy Panel automaticamente)
 - NODE_ENV=production
 
 ### Dependências Importantes
@@ -39,7 +39,7 @@ npm start
 ### 2. Build Settings
 - **Build Command:** `npm ci && npm run build`
 - **Start Command:** `npm start`
-- **Port:** 3000 (ou deixe vazio para auto-detect)
+- **Port:** 3001 (ou deixe vazio para auto-detect)
 
 ### 3. Environment
 - NODE_ENV=production
@@ -52,7 +52,7 @@ npm run build
 # Start (igual ao que o Easy Panel fará)
 npm start
 
-# Acesse: http://localhost:3000
+# Acesse: http://localhost:3001
 ```
 
 ## 🚀 Deploy Steps
